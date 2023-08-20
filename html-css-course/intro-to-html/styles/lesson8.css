@@ -1,8 +1,16 @@
 .google-logo{
     width: 200px;
-    display: block;
-    margin-left: 100px;
-    margin-bottom: -20px;
+    margin-right: 5px;
+}
+
+.search-btn{
+    padding: 10px 15px;
+    border: none;
+    margin: 1px;
+}
+
+.google-search{
+    text-align: center;
 }
 
 .google {
@@ -14,7 +22,7 @@
     outline: none;
     margin-top: 0;
     margin-bottom: 30px;
-    color: rgb(176, 176, 176);
+    color: rgb(0, 0, 0);
   }
   
   .google::placeholder {
