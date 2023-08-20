@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5</title>
+</head>
+<body>
+    <div>
+        <p class="tahoma" style="font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 35px;">This is Tahoma Font</p>
+    </div>
+
+    <div class="verdana">
+        <p class="v-header">HTML CSS Course</p>
+        <p class="v-middle">Beginner to Pro</p>
+        <p class="v-end">In this course, we'll learn the skills you need to become a developer.</p>
+        <button class="btn-verdana">Get Started</button>
+    </div>
+
+    <div class="arial">
+        <p class="deals">Biggest Deals of the Year!</p>
+        <p class="sales">Sales end Tuesday</p>
+    </div>
+
+    <div class="apple-arial">
+        <p class="business">Shopping for your business?</p>
+        <p class="work">See how Apple at Work can help.</p>
+        <p class="learn">Learn more &#62; </p>
+    </div>
+
+    <div class="macbook">
+        <p style="color: orange;">New</p>
+        <p class="macbookpro">MacBook Pro</p>
+        <p class="big">Supercharged for pros.</p>
+        <p><span class="normal">From $1999</span></p>
+        <button class="btn-mac">Buy</button>
+    </div>
+
+    <div class="stocks">
+        <p class="money">1,049.61 <span class="currency">USD</span></p>
+        <p class=><span class="pos">+18.05 (1.75%) today</span></p>
+        <p class="after-hours">After hours 1,048.00 <span class="neg">-1.61(0.15%)</span></p>
+    </div>
+
+    <div class="tweet">
+        <p class="header">
+            <span class="name">freeCodeCamp.org</span>
+            <span class="username">@freeCodeCamp</span>
+            <span class="username">1h</span>
+        </p>
+        <p class="tweet-body">
+            As a web developer, you'll want to make your
+            projects easy to use and navigate around.
+        </p>
+        <p class="tweet-body">Here <span class="tag">@chp_it</span> outlines the
+            top skills new developers should have.
+        </p>
+    </div>
+
+    <style>
+        .tag{
+            color: lightskyblue;
+        }
+
+        .tweet-body{
+            margin-bottom: 20px;
+            width: 500px;
+        }
+
+        .header{
+            margin-bottom: 4px;
+        }
+        .username{
+            color: rgb(173, 173, 173);
+        }
+
+        .name{
+            font-weight: bold;
+        }
+
+
+        .tweet{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .stocks p {
+            margin-bottom: 10px;
+        }
+
+        .after-hours{
+            color: rgb(173, 173, 173);
+        }
+
+        .neg{
+            color: rgb(202, 0, 0);
+        }
+
+        .pos{
+            color: green;
+        }
+
+        .currency{
+            font-size: 20px;
+            color: rgb(173, 173, 173);
+        }
+
+        .stocks{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .money{
+            font-size: 40px;
+        }
+
+        .macbookpro{
+            font-size: 23px;
+        }
+
+        .big{
+            font-size: 40px;
+        }
+
+        .normal{
+            font-weight: normal;
+        }
+
+        .macbook p {
+            margin-bottom: 8px;
+        }
+
+        .macbook{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .btn-mac{
+            padding: 8px 12px;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            background-color: rgb(76, 132, 216);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        div{
+            margin-bottom: 50px;
+        }
+
+        p{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .btn-verdana{
+            padding: 8px 14px;
+            color: white;
+            background-color: green;
+            border: none;
+            border-radius: 6px;
+            font-family: Verdana;
+            cursor: pointer;
+            transition: opacity 0.15s;
+        }
+
+        .btn-verdana:hover{
+            opacity: 0.7;
+        }
+
+        .btn-verdana:active{
+            opacity: 0.4;
+        }
+
+        .verdana{
+            font-family: Verdana;
+        }
+
+        .v-header{
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .v-middle{
+            font-size: 20px;
+            color: rgb(159, 159, 159);
+            margin-bottom: 20px;
+        }
+
+        .v-end{
+            margin-bottom: 20px;
+            width: 300px;
+        }
+
+        .arial{
+            font-family: Arial;
+        }
+
+        .deals{
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+
+        .apple-arial{
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .sales{
+            color: red;
+            font-style: italic;
+        }
+
+        .business{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .work{
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .learn{
+            color: rgb(108, 108, 255);
+            cursor: pointer;
+        }
+
+        .learn:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</body>
+</html>
