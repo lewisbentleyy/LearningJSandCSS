@@ -1,0 +1,50 @@
+.google-logo{
+    width: 200px;
+    display: block;
+    margin-left: 100px;
+    margin-bottom: -20px;
+}
+
+.google {
+    width: 400px;
+    padding: 8px 10px;
+    border-style: none;
+    border-radius: 100px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: rgb(176, 176, 176);
+  }
+  
+  .google::placeholder {
+    color: rgb(176, 176, 176);
+  }
+
+  .signup button {
+    padding: 8px 86px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(25, 157, 240);
+    border-radius: 5px;
+  }
+
+  .signup input{
+      padding: 8px 10px;
+      border-radius: 4px;
+      outline: none;
+      border: solid;
+      border-width: 1px;
+      border-color: rgb(176, 176, 176);
+      margin-bottom: 8px;
+  }
+
+  .firstname{
+    width: 87px;
+  }
+
+  .email{
+    display: block;
+    width: 200px;
+  }
