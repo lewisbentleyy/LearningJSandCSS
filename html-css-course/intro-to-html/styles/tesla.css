@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+p {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-family: Montserrat;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+

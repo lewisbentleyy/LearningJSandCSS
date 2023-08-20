@@ -1,0 +1,173 @@
+.tag {
+  color: lightskyblue;
+}
+
+.tweet-body {
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.header {
+  margin-bottom: 4px;
+}
+.username {
+  color: rgb(173, 173, 173);
+}
+
+.name {
+  font-weight: bold;
+}
+
+.tweet {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stocks p {
+  margin-bottom: 10px;
+}
+
+.after-hours {
+  color: rgb(173, 173, 173);
+}
+
+.neg {
+  color: rgb(202, 0, 0);
+}
+
+.pos {
+  color: green;
+}
+
+.currency {
+  font-size: 20px;
+  color: rgb(173, 173, 173);
+}
+
+.stocks {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.money {
+  font-size: 40px;
+}
+
+.macbookpro {
+  font-size: 23px;
+}
+
+.big {
+  font-size: 40px;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.macbook p {
+  margin-bottom: 8px;
+}
+
+.macbook {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-mac {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  background-color: rgb(76, 132, 216);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+div {
+  margin-bottom: 50px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.btn-verdana {
+  padding: 8px 14px;
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 6px;
+  font-family: Verdana;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.btn-verdana:hover {
+  opacity: 0.7;
+}
+
+.btn-verdana:active {
+  opacity: 0.4;
+}
+
+.verdana {
+  font-family: Verdana;
+}
+
+.v-header {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.v-middle {
+  font-size: 20px;
+  color: rgb(159, 159, 159);
+  margin-bottom: 20px;
+}
+
+.v-end {
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.arial {
+  font-family: Arial;
+}
+
+.deals {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.apple-arial {
+  font-family: Arial;
+  text-align: center;
+}
+
+.sales {
+  color: red;
+  font-style: italic;
+}
+
+.business {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.work {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.learn {
+  color: rgb(108, 108, 255);
+  cursor: pointer;
+}
+
+.learn:hover {
+  text-decoration: underline;
+}
