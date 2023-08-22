@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
 .thumbnail{
     width: 300px;
     display: block;
+}
+
+.video-title{
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 14px;
 }
 
 .search-bar{
@@ -8,14 +17,42 @@
     display: block;
 }
 
-.video-title{
-    width: 300px;
-}
-
 .video-preview{
     width: 300px;
     display: inline-block;
     vertical-align: top;
     margin-right: 15px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+.video-channel{
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.video-views{
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.thumbnail-row{
+    margin-bottom: 15px;
+}
+
+.channel-pic{
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+}
+
+.video-info{
+    display: inline-block;
+    width: 200px;
+}
+
+.profile-pic{
+    border-radius: 50px;
+    width: 80%;
+}
