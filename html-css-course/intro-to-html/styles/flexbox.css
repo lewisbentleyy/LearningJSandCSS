@@ -1,0 +1,30 @@
+.container-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+
+}
+
+.container{
+    margin-top: 30px;
+    font-family: Roboto;
+    width: 250px;
+    border: solid rgb(214, 214, 214) 1px;
+    border-radius: 5px;
+}
+
+.container p{
+    margin-left: 10px;
+}
+
+.container button{
+    padding: 4px 10px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(26, 137, 247);
+    border-radius: 50px;
+    border: none;
+    margin-right: 10px;
+}
