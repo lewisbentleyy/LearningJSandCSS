@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Objects</title>
+    </head>
+    <body>
+        <script>
+            /*
+            const product = {
+                name: "socks",
+                price: 1090,
+            };
+
+            console.log(typeof product);
+            console.log(product);
+
+            product.bool = true;
+            console.log(product);
+
+            delete product.bool;
+            console.log(product);
+
+            const product2 = {
+                name: "shirt",
+                "delivery-time": "1 day",
+                rating: {
+                    stars: 4.5,
+                    count: 87,
+                },
+            };
+
+            console.log(product2);
+
+            console.log(JSON.stringify(product2));
+
+            const jsonString = JSON.stringify(product2);
+
+            console.log(JSON.parse(jsonString));
+            */
+            /*
+            console.log("hello".length);
+            const object1 = {
+                message: "hello",
+                method() {
+                    console.log('method')
+                },
+            };
+
+            object1.method()
+            */
+
+            const product = {
+                name: "basketball",
+                price: 2095,
+            };
+
+            const product2 = {
+                name: "bushball",
+                price: 500,
+            };
+
+            const product3 = {
+                name: "bushball",
+                price: 500,
+            };
+
+            console.log(product);
+            product.price += 500;
+            console.log(product);
+
+            product["delivery-time"] = "3 days";
+            console.log(product);
+
+            comparePrice = (product1, product2) => {
+                return product1.price < product2.price ? product1 : product2;
+            };
+
+            console.log(comparePrice(product, product2));
+
+            isSameProduct = (product1, product2) => {
+                return product1.name === product2.name &&
+                    product1.price === product2.price
+                    ? true
+                    : false;
+            };
+
+            console.log(isSameProduct(product2, product3));
+
+            console.log('Good Morning!'.toLowerCase())
+
+            console.log('test'.repeat(2))
+        </script>
+    </body>
+</html>

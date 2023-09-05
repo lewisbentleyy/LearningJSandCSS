@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button>9a button</button>
+        <button class="js-9b">9b button</button>
+
+        <p class="choice"></p>
+        <button onclick="choiceDisplay('heads')">heads</button>
+        <button onclick="choiceDisplay('tails')">tails</button>
+
+        <p class="name"></p>
+        <input class="js-text" type="text" />
+        <button onclick="displayText()">Submit</button>
+
+        <p class="writing"></p>
+        <input onkeyup="updateText()" class="js-writing" type="text" />
+
+        <script>
+
+            function updateText () {
+                document.querySelector('.writing').innerHTML = document.querySelector('.js-writing').value;
+            }
+
+            console.log(document.querySelector("button"));
+            document.querySelector(".js-9b").innerHTML = "9b done!";
+            function choiceDisplay(choice) {
+                document.querySelector(
+                    ".choice"
+                ).innerHTML = `You choose: ${choice}`;
+            }
+
+            function displayText() {
+                const text = document.querySelector(".js-text").value;
+                document.querySelector(
+                    ".name"
+                ).innerHTML = `Your name is: ${text}`;
+            }
+        </script>
+    </body>
+</html>
