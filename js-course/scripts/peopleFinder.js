@@ -998,7 +998,10 @@ const titleCase = (word) => {
     return newWord;
 };
 
-const studentNumber = 1635;
+const studentNumberAbroad = 1635;
+const studentNumberAlgs = 231;
+const participantsVaribleAlgs = '38547'
+const participantsVaribleCSAbroad = '3322'
 
 let i = 0;
 let womanCount = 0;
@@ -1006,7 +1009,7 @@ let maleCount = 0;
 while (true) {
     try {
         const tbody = document.getElementById(
-            `user-index-participants-3322_r${i}`
+            `user-index-participants-${participantsVaribleAlgs}_r${i}`
         );
 
         const imgAndName = tbody.children[1].children[0].innerHTML;
@@ -1025,8 +1028,8 @@ while (true) {
     }
 }
 
-const malePercentage = Math.round((maleCount / studentNumber) * 100);
-const womanPercentage = Math.round((womanCount / studentNumber) * 100);
+const malePercentage = Math.round((maleCount / studentNumberAlgs) * 100);
+const womanPercentage = Math.round((womanCount / studentNumberAlgs) * 100);
 
 console.log(`Males: ${maleCount}, ${malePercentage}%`);
 console.log(`Women: ${womanCount}, ${womanPercentage}%`);
