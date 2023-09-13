@@ -1,18 +1,33 @@
 let intervalID;
+let timerGoing = false;
 
 document.querySelector(".js-reset").addEventListener("click", () => {
     document.querySelector(".js-min").innerHTML = "00";
     document.querySelector(".js-sec").innerHTML = "00";
     document.querySelector(".js-millisec").innerHTML = "00";
     clearInterval(intervalID);
-    let minute = 0;
-    let second = 0;
-    let millisec = 0;
+    if (timerGoing) {
+        document.querySelector(".js-start").classList.remove("stop");
+        document.querySelector(".js-start").innerHTML = "Start";
+        timerGoing = false;
+    }
+    minute = 0;
+    second = 0;
+    millisec = 0;
 });
 
 document.querySelector(".js-start").addEventListener("click", () => {
-    start();
-
+    if (!timerGoing) {
+        timerGoing = true;
+        start();
+        document.querySelector(".js-start").innerHTML = "Stop";
+        document.querySelector(".js-start").classList.add("stop");
+    } else {
+        timerGoing = false;
+        document.querySelector(".js-start").innerHTML = "Start";
+        document.querySelector(".js-start").classList.remove("stop");
+        clearInterval(intervalID);
+    }
 });
 
 let minute = 0;
@@ -26,22 +41,22 @@ function start() {
             document.querySelector(".js-millisec").innerHTML = `0${millisec}`;
         } else if (millisec < 100) {
             document.querySelector(".js-millisec").innerHTML = millisec;
-        } else{
+        } else {
             millisec = 0;
             second++;
-            document.querySelector(".js-millisec").innerHTML = '00';
-            if (second < 10){
-                document.querySelector(".js-sec").innerHTML =`0${second}`;
-            } else if (second < 60){
-                document.querySelector(".js-sec").innerHTML =`${second}`;
+            document.querySelector(".js-millisec").innerHTML = "00";
+            if (second < 10) {
+                document.querySelector(".js-sec").innerHTML = `0${second}`;
+            } else if (second < 60) {
+                document.querySelector(".js-sec").innerHTML = `${second}`;
             } else {
                 second = 0;
                 minute++;
-                document.querySelector(".js-sec").innerHTML =`0${second}`;
-                if (minute < 10){
-                    document.querySelector(".js-min").innerHTML =`0${minute}`;
-                } else if (second < 60){
-                    document.querySelector(".js-min").innerHTML =`${minute}`;
+                document.querySelector(".js-sec").innerHTML = `0${second}`;
+                if (minute < 10) {
+                    document.querySelector(".js-min").innerHTML = `0${minute}`;
+                } else if (second < 60) {
+                    document.querySelector(".js-min").innerHTML = `${minute}`;
                 }
             }
         }

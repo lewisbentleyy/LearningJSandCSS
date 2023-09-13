@@ -1,6 +1,6 @@
 body{
     font-family:Helvetica, sans-serif;
-    background-color: rgb(24, 24, 24);
+    background-color: black
 }
 
 .container{
@@ -15,22 +15,10 @@ body{
     width: 260px;
 }
 
-.time{
-    font-size: 50px;
-    color: white;
-    padding: 0 10px;
-}
-
 .centered {
     display: flex;
     flex-direction: column;
     width: 260px;
-}
-
-.time.holder{
-    display: flex;
-    width: 260px;
-    justify-content: center;
 }
 
 .btn-container{
@@ -46,7 +34,6 @@ body{
     border: none;
     cursor: pointer;
     transition: all 0.1s;
-    font-weight: bold;
 }
 
 .reset:hover, .start:hover{
@@ -58,12 +45,23 @@ body{
 
 .reset{
     color: white;
-    background-color: grey;
+    background-color: rgb(95, 95, 95);
+    border: solid black 1.5px; 
+    outline: solid rgb(95, 95, 95) 1.5px;
 }
 
 .start{
-    color: rgb(189, 255, 189);
+    color: rgb(90, 161, 90);
     background-color: rgb(0, 44, 0);
+    border: solid black 1.5px; 
+    outline: solid rgb(0, 44, 0) 1.5px;
+}
+
+.stop{
+    color: rgb(255, 117, 117);
+    background-color: rgb(44, 0, 0);
+    border: solid black 1.5px; 
+    outline: solid rgb(44, 0, 0) 1.5px;
 }
 
 span {
@@ -73,7 +71,14 @@ span {
 p{
     margin: 0;
     color: white;
-    font-size: 50px;
+    font-size:65px;
     display: inline-block;
+    margin-left: 3.485px;
+    margin-right: 3.485px;
+}
 
+.laps{
+    border: none;
+    border-top: solid rgb(73, 73, 73) 1px;
+    margin-top: 15px;
 }
