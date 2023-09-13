@@ -2,21 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Stop Watch</title>
-        <link
-            rel="stylesheet"
-            href="styles/stopwatch.css"
-        />
+        <link rel="stylesheet" href="styles/stopwatch.css" />
     </head>
     <body>
         <div class="container">
             <div class="centered">
                 <div class="time-holder">
-                    <p>
+                    <p class="main-time">
                         <span class="min js-min">00</span>:<span
                             class="sec js-sec"
                             >00</span
@@ -24,10 +18,10 @@
                     </p>
                 </div>
                 <div class="btn-container">
-                    <button class="reset js-reset">Reset</button>
+                    <button class="reset js-reset">Lap</button>
                     <button class="start js-start">Start</button>
                 </div>
-                <div class="laps"></div>
+                <div class="laps js-laps"></div>
             </div>
         </div>
 
