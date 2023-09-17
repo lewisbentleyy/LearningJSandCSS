@@ -34,6 +34,12 @@ function App() {
                 }}>
                 Office
             </button>
+            <button
+                onClick={() => {
+                    generateExcuse("");
+                }}>
+                Random
+            </button>
             <p>{reason?.excuse}</p>
         </div>
     );
