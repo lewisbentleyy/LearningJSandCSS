@@ -42,3 +42,75 @@
     transform: rotate(720deg);
   }
 }
+
+body {
+  background-color: rgb(26, 26, 26);
+}
+
+.add-task{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.add-task button {
+  border: none;
+  border-radius: 100px;
+  background-color: green;
+  color: white;
+}
+
+.add-task input{
+  border: 1px solid black;
+  padding: 10px;
+  outline: none;
+  width: 60%;
+  border-radius: 100px;
+}
+
+.list {
+  height: 400px;
+  border: none;
+  width: 100vw;
+  overflow-y: scroll;
+  margin-top: 10px;
+  color: white;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.list-item {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: color 0.1s;
+}
+
+.delete, .completed {
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  color: white;
+}
+.delete {
+  background-color: red;
+}
+
+.completed {
+  background-color: green;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+button:active{
+  opacity: 0.5;
+}
+
+button {
+  transition: all 0.15s;
+}
