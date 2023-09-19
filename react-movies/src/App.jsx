@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Axios from "axios";
 import {} from "./App.css";
 import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
